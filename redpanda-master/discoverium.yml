@@ -1,0 +1,8 @@
+app:
+  name: RedPanda
+  authors: reredpanda
+  category: entertainment
+  description: Android app for streaming and downloading media.
+  icon: https://raw.githubusercontent.com/reredpanda/redpanda/refs/heads/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png
+  releases:
+    url: https://github.com/reredpanda/redpanda/releases

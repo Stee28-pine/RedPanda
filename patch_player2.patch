@@ -1,0 +1,26 @@
+--- src/components/Player.tsx
++++ src/components/Player.tsx
+@@ -58,6 +58,11 @@
+     // Reset state when song changes
+     setCurrentTime(0);
+     setDuration(song.durationSeconds || 0);
++
++    if (song.audioUrl) {
++      setIsLoadingYt(false);
++      return; // Use native audio url instead of searching youtube
++    }
+     
+     if (song.youtubeId) {
+        setYoutubeId(song.youtubeId);
+@@ -171,8 +176,8 @@
+           className="fixed bottom-6 left-1/2 -translate-x-1/2 flex items-center justify-center gap-4 z-[55] w-full max-w-5xl px-4 pointer-events-none"
+         >
+           <div style={{ display: 'none' }}>
+-            {youtubeId && (
++            {(youtubeId || song.audioUrl) && (
+               <ReactPlayer
+                 ref={playerRef}
+-                src={`https://www.youtube.com/watch?v=${youtubeId}`}
++                src={song.audioUrl || `https://www.youtube.com/watch?v=${youtubeId}`}
+                 playing={isPlaying && !isLoadingYt}
+                 volume={isMuted ? 0 : volume}

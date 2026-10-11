@@ -1,0 +1,55 @@
+--- src/components/Player.tsx
++++ src/components/Player.tsx
+@@ -10,7 +10,7 @@
+ const FALLBACK_IMG = 'https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?w=400&q=80';
+ 
+ interface PlayerProps {
+-  song: Song;
++  song: Song | null;
+   isPlaying: boolean;
+   onTogglePlay: () => void;
+   onToggleRightSidebar: () => void;
+@@ -40,16 +40,19 @@
+   const [volume, setVolume] = useState(1);
+   const [isMuted, setIsMuted] = useState(false);
+ 
+   useEffect(() => {
++    if (!song) return;
+     // Reset state when song changes
+     setCurrentTime(0);
+     setDuration(song.durationSeconds || 0);
+ 
+     if (song.youtubeId) {
+        setYoutubeId(song.youtubeId);
+        setIsLoadingYt(false);
+        return;
+     }
+ 
+     // Fetch youtube ID if not available
+     const fetchYtId = async () => {
+@@ -118,6 +121,8 @@
+   const progressPercent = duration > 0 ? (currentTime / duration) * 100 : 0;
+   const volumePercent = volume * 100;
+ 
+   return (
+     <>
+       <AnimatePresence>
+-        {showLyrics && (
++        {showLyrics && song && (
+           <LyricsOverlay 
+             song={song} 
+@@ -131,6 +136,7 @@
+       <AnimatePresence>
++        {song && (
+         <motion.div 
+           key="player"
+           initial={{ y: 100, opacity: 0, scale: 0.9 }}
+@@ -139,6 +145,7 @@
+           transition={{ type: "spring", stiffness: 300, damping: 25 }}
+           className="fixed bottom-6 left-1/2 -translate-x-1/2 flex items-center justify-center gap-4 z-[55] w-full max-w-5xl px-4 pointer-events-none"
+         >
++        )}
+           <div className="absolute opacity-[0.01] pointer-events-none -z-10 w-[200px] h-[200px] overflow-hidden">
+               <ReactPlayer
+                 ref={playerRef}
+                 url={youtubeId ? `https://www.youtube.com/watch?v=${youtubeId}` : ""}

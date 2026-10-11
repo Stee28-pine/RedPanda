@@ -1,0 +1,71 @@
+--- src/components/Player.tsx
++++ src/components/Player.tsx
+@@ -160,11 +160,25 @@
+       </AnimatePresence>
+ 
++      <div className="absolute opacity-[0.01] pointer-events-none -z-10 w-[200px] h-[200px] overflow-hidden">
++          <ReactPlayer
++            ref={playerRef}
++            url={youtubeId ? `https://www.youtube.com/watch?v=${youtubeId}` : ""}
++            playing={isPlaying && !isLoadingYt}
++            width="200px"
++            height="200px"
++            config={{ youtube: { playerVars: { origin: typeof window !== "undefined" ? window.location.origin : "" } } }}
++            volume={isMuted ? 0 : volume}
++            onProgress={handleProgress}
++            onDuration={handleDuration}
++            onEnded={() => {
++              if (repeatMode === 'one') {
++                if (playerRef.current) {
++                  if (typeof playerRef.current.seekTo === 'function') {
++                    playerRef.current.seekTo(0);
++                  } else {
++                    playerRef.current.currentTime = 0;
++                  }
++                  setCurrentTime(0);
++                }
++              } else if (onNext) {
++                onNext();
++              }
++            }}
++          />
++      </div>
++
+       <AnimatePresence>
++        {song && (
+         <motion.div 
+           key="player"
+@@ -176,28 +190,4 @@
+         >
+-          <div className="absolute opacity-[0.01] pointer-events-none -z-10 w-[200px] h-[200px] overflow-hidden">
+-              <ReactPlayer
+-                ref={playerRef}
+-                url={youtubeId ? `https://www.youtube.com/watch?v=${youtubeId}` : ""}
+-                playing={isPlaying && !isLoadingYt}
+-                width="200px"
+-                height="200px"
+-                config={{ youtube: { playerVars: { origin: typeof window !== "undefined" ? window.location.origin : "" } } }}
+-                volume={isMuted ? 0 : volume}
+-                onProgress={handleProgress}
+-                onDuration={handleDuration}
+-                onEnded={() => {
+-                  if (repeatMode === 'one') {
+-                    if (playerRef.current) {
+-                      if (typeof playerRef.current.seekTo === 'function') {
+-                        playerRef.current.seekTo(0);
+-                      } else {
+-                        playerRef.current.currentTime = 0;
+-                      }
+-                      setCurrentTime(0);
+-                    }
+-                  } else if (onNext) {
+-                    onNext();
+-                  }
+-                }}
+-              />
+-          </div>
+ 
+@@ -321,2 +311,3 @@
+         )}
+         </motion.div>
++        )}

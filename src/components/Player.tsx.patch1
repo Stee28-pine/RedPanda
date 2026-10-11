@@ -1,0 +1,2 @@
+import React from 'react';
+// ... we will rewrite Player.tsx to handle the mobile full screen

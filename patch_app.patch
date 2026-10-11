@@ -1,0 +1,82 @@
+--- src/App.tsx
++++ src/App.tsx
+@@ -10,6 +10,7 @@
+ import { ALBUMS, SONGS } from './data';
+ import { motion, AnimatePresence } from 'motion/react';
+ import { useSearch } from './hooks/useSearch';
++import { Check } from 'lucide-react';
+ 
+ export default function App() {
+   const [currentView, setCurrentView] = useState<'home' | 'album' | 'search' | 'artist'>('home');
+@@ -29,6 +30,17 @@
+   const [likedSongs, setLikedSongs] = useState<Song[]>([]);
+   const [downloadedSongs, setDownloadedSongs] = useState<Song[]>([]);
+ 
++  const [toast, setToast] = useState<{ message: string } | null>(null);
++
++  const showToast = (message: string) => {
++    setToast({ message });
++    setTimeout(() => setToast(null), 3000);
++  };
++
++  const handleShare = (item: { type: 'song' | 'album' | 'artist', id: string, name: string }) => {
++    navigator.clipboard.writeText(`https://music.applet.mock/${item.type}/${item.id}`);
++    showToast(`Link to ${item.name} copied`);
++  };
++
+   // Local persistence
+   useEffect(() => {
+     if (typeof window !== 'undefined') {
+@@ -226,6 +238,20 @@
+ 
+   return (
+     <div className="flex h-screen bg-[#EBEBEB] text-gray-900 font-sans overflow-hidden p-2 gap-2 select-none relative">
++      {/* Toast Notification */}
++      <AnimatePresence>
++        {toast && (
++          <motion.div
++            initial={{ y: -50, opacity: 0, scale: 0.9 }}
++            animate={{ y: 20, opacity: 1, scale: 1 }}
++            exit={{ y: -50, opacity: 0, scale: 0.9 }}
++            className="fixed top-6 left-1/2 -translate-x-1/2 z-[60] bg-white/80 backdrop-blur-xl border border-gray-200/50 shadow-lg rounded-full px-6 py-3 flex items-center gap-3 text-[14px] font-semibold text-gray-900"
++          >
++            <Check size={18} className="text-[#CA5A2C]" />
++            {toast.message}
++          </motion.div>
++        )}
++      </AnimatePresence>
+       {!isSidebarCollapsed && (
+         <div 
+           className="md:hidden fixed inset-0 z-30 bg-black/20 backdrop-blur-sm"
+@@ -298,6 +324,7 @@
+                   downloadedSongs={downloadedSongs}
+                   onToggleLike={toggleLike}
+                   onToggleDownload={toggleDownload}
++                  onShare={handleShare}
+                   onAddToQueue={handleAddToQueue}
+                   onArtistClick={handleNavigateArtist}
+                 />
+@@ -319,6 +346,7 @@
+                   }}
+                   onToggleLike={toggleLike}
+                   onToggleDownload={toggleDownload}
++                  onShare={handleShare}
+                   onAddToQueue={handleAddToQueue}
+                   likedSongs={likedSongs}
+                   downloadedSongs={downloadedSongs}
+@@ -342,6 +370,7 @@
+                     downloadedSongs={downloadedSongs}
+                     onToggleLike={toggleLike}
+                     onToggleDownload={toggleDownload}
++                    onShare={handleShare}
+                     onAddToQueue={handleAddToQueue}
+                     onArtistClick={handleNavigateArtist}
+                   />
+@@ -367,6 +396,7 @@
+           }}
+           isLiked={likedSongs.some(s => s.id === nowPlaying.id)}
+           onToggleLike={() => toggleLike(nowPlaying)}
++          onShare={handleShare}
+         />
+       )}
+     </div>

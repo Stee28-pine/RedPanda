@@ -1,0 +1,205 @@
+[
+  {
+    "id": "222",
+    "title": "Perfect",
+    "artist": "Ed Sheeran",
+    "oldUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/7b/16/ee/7b16eed7-4ce8-6c87-83eb-6a4a9042b47f/190295851286.jpg/600x600bb.jpg",
+    "newUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/15/e6/e8/15e6e8a4-4190-6a8b-86c3-ab4a51b88288/190295851286.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "223",
+    "title": "Thinking Out Loud",
+    "artist": "Ed Sheeran",
+    "oldUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/4c/26/fa/4c26fa32-23c2-d3a3-d95b-b98a00ee123f/825646284520.jpg/600x600bb.jpg",
+    "newUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/2d/36/f9/2d36f9a7-2c3e-ce0f-7fb6-036feecb221f/825646974450.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "224",
+    "title": "Stay",
+    "artist": "The Kid LAROI, Justin Bieber",
+    "oldUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/4e/02/75/4e027588-4e1b-8777-e61e-8fe5ba2b109e/886449419197.jpg/600x600bb.jpg",
+    "newUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/89/59/6a/89596ab9-fa3c-8d08-4d95-a6450fa2013c/886449400515.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "225",
+    "title": "BIRDS OF A FEATHER",
+    "artist": "Billie Eilish",
+    "oldUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a4/09/b3/a409b30c-514e-09dc-1888-295b7fe3153c/24UMGIM41846.rgb.jpg/600x600bb.jpg",
+    "newUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/92/9f/69/929f69f1-9977-3a44-d674-11f70c852d1b/24UMGIM36186.rgb.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "226",
+    "title": "Watermelon Sugar",
+    "artist": "Harry Styles",
+    "oldUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/64/d9/3e/64d93e18-cf5b-7b0b-3316-2917d0598822/886448062820.jpg/600x600bb.jpg",
+    "newUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2b/c4/c9/2bc4c9d4-3bc6-ab13-3f71-df0b89b173de/886448022213.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "227",
+    "title": "ocean eyes",
+    "artist": "Billie Eilish",
+    "oldUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d1/27/1a/d1271a39-388a-2771-a477-96a987efc225/17UMGIM92200.rgb.jpg/600x600bb.jpg",
+    "newUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/02/1d/30/021d3036-5503-3ed3-df00-882f2833a6ae/17UM1IM17026.rgb.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "24",
+    "title": "Softly",
+    "artist": "Karan Aujla, Ikky",
+    "oldUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/48/4f/7b/484f7b6b-4e0d-e21b-41ce-a50d24f0c78a/197188730999.jpg/600x600bb.jpg",
+    "newUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/d3/08/bc/d308bc6a-20e1-6532-d933-35d1b429210e/5054197755538.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "25",
+    "title": "Winning Speech",
+    "artist": "Karan Aujla, MXRCI",
+    "oldUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/0c/3d/bf/0c3dbfe8-b807-6f68-7c8a-7e3f4a3bfec6/198015507502.jpg/600x600bb.jpg",
+    "newUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/7c/36/487c3668-f7a4-4b1a-e09e-c74dae124dd9/5063483578089_cover.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "26",
+    "title": "Born to Shine",
+    "artist": "Diljit Dosanjh",
+    "oldUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/5a/a2/4b/5aa24bb9-7151-5ee4-d53b-e01e74f32c74/859740925230_cover.jpg/600x600bb.jpg",
+    "newUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/d2/89/ac/d289ac98-749e-3822-6b6e-b06aa4815715/859740651597_cover.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "27",
+    "title": "Kinni Kinni",
+    "artist": "Diljit Dosanjh",
+    "oldUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/05/27/15/05271501-8e97-e89c-38fa-2a688b5ea1ee/859775981249_cover.jpg/600x600bb.jpg",
+    "newUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/94/80/be/9480bec1-6ca2-5bae-a7da-d0e7c45633ce/859779847831_cover.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "28",
+    "title": "G.O.A.T.",
+    "artist": "Diljit Dosanjh",
+    "oldUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/5a/a2/4b/5aa24bb9-7151-5ee4-d53b-e01e74f32c74/859740925230_cover.jpg/600x600bb.jpg",
+    "newUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/d2/89/ac/d289ac98-749e-3822-6b6e-b06aa4815715/859740651597_cover.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "29",
+    "title": "With You",
+    "artist": "AP Dhillon",
+    "oldUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/93/29/70/9329705a-58f8-b391-7290-7cb5675f6ce8/197188709544.jpg/600x600bb.jpg",
+    "newUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5a/ac/00/5aac005f-9403-70e4-bce0-cf452017476e/197189606472.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "30",
+    "title": "Insane",
+    "artist": "AP Dhillon, Gurinder Gill",
+    "oldUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/cb/7d/50/cb7d5071-70bf-00d9-5f10-e2b85e0fe169/859746401660_cover.jpg/600x600bb.jpg",
+    "newUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/16/d6/94/16d6949f-6072-0b42-f88b-a61ffb129952/859747110851_cover.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "31",
+    "title": "No Love",
+    "artist": "Shubh",
+    "oldUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e0/75/ca/e075ca33-289b-9c76-5484-90a2a5f78c8c/859758784362_cover.jpg/600x600bb.jpg",
+    "newUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/a7/b3/80/a7b380b9-9e29-1642-566e-d1ca4b920886/196776912972.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "32",
+    "title": "Baller",
+    "artist": "Shubh, Ikky",
+    "oldUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/fb/0f/f2/fb0ff292-1dc3-9c8e-32ef-9f37cbb22f87/859765275529_cover.jpg/600x600bb.jpg",
+    "newUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/e9/bd/93/e9bd9316-75a6-bc15-aebe-c737037bedf0/196925634489.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "33",
+    "title": "Cheques",
+    "artist": "Shubh",
+    "oldUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/d9/fe/39/d9fe39a2-9ff0-cf17-5fe9-ee708174f762/859772594688_cover.jpg/600x600bb.jpg",
+    "newUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/dc/46/a9/dc46a9c9-794e-2d7a-1afb-97eb4ae0fff6/197188915704.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "34",
+    "title": "295",
+    "artist": "Sidhu Moosewala",
+    "oldUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/1e/8a/be/1e8abe36-58aa-2c5d-4f10-67123aa24b74/859748680780_cover.jpg/600x600bb.jpg",
+    "newUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/97/69/58/976958ae-725e-bd41-6755-f0921c697840/810063889609_cover.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "35",
+    "title": "Tauba Tauba",
+    "artist": "Karan Aujla",
+    "oldUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b8/b8/04/b8b8042c-7b2f-7a42-7a0e-bc43be5c13e5/8903431980838_cover.jpg/600x600bb.jpg",
+    "newUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/79/d2/01/79d201d2-e54d-5604-81fb-313f30db7219/198588533581.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "36",
+    "title": "Gerua",
+    "artist": "Arijit Singh, Antara Mitra",
+    "oldUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/55/94/a5/5594a5e0-fa1e-e722-1d01-e23e74b283c7/886445657470.jpg/600x600bb.jpg",
+    "newUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/dd/c8/ee/ddc8ee1d-baeb-0c8b-383f-1eb21bd172c2/886445593280.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "37",
+    "title": "Hawayein",
+    "artist": "Arijit Singh, Pritam",
+    "oldUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/a5/fe/d3/a5fed33a-e01d-d4a9-d65e-2b1029c2d159/886446654768.jpg/600x600bb.jpg",
+    "newUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/41/aa/e3/41aae321-0a81-2762-e0eb-c60844109fe7/886446683584.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "38",
+    "title": "Tum Se Hi",
+    "artist": "Mohit Chauhan, Pritam",
+    "oldUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/eb/fa/d3/ebfad3fc-21e1-e121-50e5-7b56f8a8ee30/888880946287.jpg/600x600bb.jpg",
+    "newUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3d/c7/43/3dc74387-e7f4-2342-397c-4cf2037c69a5/8902894623223_cover.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "39",
+    "title": "Jeena Jeena",
+    "artist": "Atif Aslam, Sachin-Jigar",
+    "oldUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/1b/30/14/1b30141b-a5d6-8488-75c1-3fcf0fe22f99/886445037142.jpg/600x600bb.jpg",
+    "newUrl": null
+  },
+  {
+    "id": "40",
+    "title": "Pee Loon",
+    "artist": "Mohit Chauhan, Pritam",
+    "oldUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/65/58/91/6558914d-61c0-eb99-0a69-80517865c3bb/8902894353458_cover.jpg/600x600bb.jpg",
+    "newUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f3/d9/23/f3d92398-118c-10c9-2ef8-5f28cff344c2/8902894688512_cover.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "41",
+    "title": "Satranga",
+    "artist": "Arijit Singh, Shreyas Puranik",
+    "oldUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ea/1c/09/ea1c098d-e4c1-36ba-4a25-e51c8a58a7e0/197188998498.jpg/600x600bb.jpg",
+    "newUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/db/ad/5e/dbad5e8b-0bee-d962-92d4-021c90e375ac/8902894362092_cover.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "42",
+    "title": "Mast Magan",
+    "artist": "Arijit Singh, Chinmayi",
+    "oldUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/21/df/a1/21dfa13f-bf3a-96e5-4927-466ae2d19208/886444505192.jpg/600x600bb.jpg",
+    "newUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e1/1b/83/e11b8398-0089-cfb1-f998-16125b3f17c4/8902894355612_cover.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "43",
+    "title": "Khairiyat",
+    "artist": "Arijit Singh, Pritam",
+    "oldUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/09/88/a6/0988a6d6-f182-e28a-77e8-b7c191a2fc7c/8902894358897_cover.jpg/600x600bb.jpg",
+    "newUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/da/5a/14/da5a1435-fc2a-5ab9-667f-a9bf2daa46f4/8902894360937_cover.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "111",
+    "title": "OMG",
+    "artist": "NewJeans",
+    "oldUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/ef/7b/09/ef7b09ca-6421-4f1e-450f-2fae2beeb4a1/196922312687_Cover.jpg/600x600bb.jpg",
+    "newUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/48/96/08/4896085e-b550-cb0a-3e5b-1f203521cb82/196922265464_Cover.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "112",
+    "title": "Ditto",
+    "artist": "NewJeans",
+    "oldUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/ef/7b/09/ef7b09ca-6421-4f1e-450f-2fae2beeb4a1/196922312687_Cover.jpg/600x600bb.jpg",
+    "newUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/f6/29/42/f629426e-92fe-535c-cbe4-76e70850819b/196922287107_Cover.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "114",
+    "title": "Kill This Love",
+    "artist": "BLACKPINK",
+    "oldUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/7c/4f/9d/7c4f9d69-cb19-74d7-062e-fe823c3b0dfb/19UMGIM26760.rgb.jpg/600x600bb.jpg",
+    "newUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/d6/2a/db/d62adbe1-6994-581c-b3b2-aeacafa35c1d/19UMGIM30819.rgb.jpg/600x600bb.jpg"
+  }
+]

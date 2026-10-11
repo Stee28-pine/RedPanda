@@ -1,0 +1,20 @@
+--- src/components/Player.tsx
++++ src/components/Player.tsx
+@@ -172,13 +172,17 @@
+           exit={{ y: 100, opacity: 0, scale: 0.9 }}
+           transition={{ type: "spring", stiffness: 300, damping: 25 }}
+           className="fixed bottom-6 left-1/2 -translate-x-1/2 flex items-center justify-center gap-4 z-[55] w-full max-w-5xl px-4 pointer-events-none"
+         >
+-          <div className="absolute opacity-0 pointer-events-none w-0 h-0">
++          <div className="absolute opacity-0 pointer-events-none -z-10 w-[200px] h-[200px] overflow-hidden">
+             {youtubeId && (
+               <ReactPlayer
+                 ref={playerRef}
+                 src={`https://www.youtube.com/watch?v=${youtubeId}`}
+                 playing={isPlaying && !isLoadingYt}
++                width="200px"
++                height="200px"
++                config={{ youtube: { playerVars: { autoplay: 1, controls: 0 } } }}
+                 volume={isMuted ? 0 : volume}
+                 onProgress={handleProgress}
+                 onDuration={handleDuration}

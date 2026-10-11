@@ -1,0 +1,8 @@
+{
+  "name": "RedPanda",
+  "description": "Premium streaming interface with fluid focus animations and cinematic hero banners.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

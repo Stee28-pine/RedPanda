@@ -1,0 +1,40 @@
+--- src/components/RightSidebar.tsx
++++ src/components/RightSidebar.tsx
+@@ -1,7 +1,7 @@
+ import { Song } from '../types';
+ import { motion, AnimatePresence, Reorder } from 'motion/react';
+ import { GripVertical } from 'lucide-react';
+-import { useEffect, useState } from 'react';
++import { useEffect, useState, useRef } from 'react';
+ 
+ const FALLBACK_IMG = 'https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?w=400&q=80';
+ 
+@@ -10,6 +10,7 @@
+   const nextUp = currentIdx !== -1 && queue ? queue.slice(currentIdx + 1, currentIdx + 11) : [];
+ 
+   const [localNextUp, setLocalNextUp] = useState<Song[]>([]);
++  const activeLyricRef = useRef<HTMLParagraphElement>(null);
+ 
+   useEffect(() => {
+     setLocalNextUp(nextUp);
+@@ -26,6 +27,12 @@
+     : -1;
+   
+   const currentLyricIdx = activeLyricIdx !== -1 ? (nowPlaying!.lyrics!.length - 1) - activeLyricIdx : -1;
++
++  useEffect(() => {
++    if (activeLyricRef.current) {
++      activeLyricRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
++    }
++  }, [currentLyricIdx]);
+ 
+   return (
+     <aside className="w-80 flex-shrink-0 flex flex-col h-full bg-transparent px-4 py-4 overflow-y-auto hide-scrollbar pb-32 relative z-10 border-l border-white/20">
+@@ -58,6 +65,7 @@
+                 const isPassed = idx < currentLyricIdx;
+                 return (
+                   <motion.p
++                    ref={isActive ? activeLyricRef : null}
+                     key={idx}
+                     animate={{
+                       scale: isActive ? 1.05 : 1,

@@ -1,0 +1,20 @@
+--- src/components/Player.tsx
++++ src/components/Player.tsx
+@@ -118,6 +118,17 @@
+   const progressPercent = duration > 0 ? (currentTime / duration) * 100 : 0;
+   const volumePercent = volume * 100;
+ 
++  if (!song) {
++    return (
++      <div className="absolute opacity-[0.01] pointer-events-none -z-10 w-[200px] h-[200px] overflow-hidden">
++        <ReactPlayer
++          ref={playerRef}
++          url=""
++        />
++      </div>
++    );
++  }
++
+   return (
+     <>
+       <AnimatePresence>

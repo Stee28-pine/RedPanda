@@ -1,0 +1,32 @@
+--- src/components/HomeView.tsx
++++ src/components/HomeView.tsx
+@@ -10,12 +10,14 @@
+   onCollectionClick, 
+   recentlyPlayed = [], 
+   onPlaySong,
+-  onGenreClick
++  onGenreClick,
++  onArtistClick
+ }: { 
+   onCollectionClick: (c: Collection) => void;
+   recentlyPlayed?: Song[];
+   onPlaySong?: (song: Song, context: { songs: Song[] }) => void;
+   onGenreClick?: (genre: string) => void;
++  onArtistClick?: (artist: string) => void;
+ }) {
+   return (
+     <div className="px-8 pb-32 pt-6">
+@@ -91,7 +93,12 @@
+                 </div>
+               </div>
+               <h3 className="font-semibold text-gray-900 truncate leading-tight tracking-tight">{song.title}</h3>
+-              <p className="text-[13px] font-medium text-gray-500 truncate mt-0.5">{song.artist}</p>
++              <p 
++                className="text-[13px] font-medium text-gray-500 truncate mt-0.5 hover:underline"
++                onClick={(e) => { e.stopPropagation(); onArtistClick?.(song.artist); }}
++              >
++                {song.artist}
++              </p>
+             </motion.div>
+           )) : RECENTLY_PLAYED.map((item, i) => (
+             <motion.div 
